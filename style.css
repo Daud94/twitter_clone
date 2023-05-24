@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
+    outline: none;
 }
 
 html {
@@ -60,6 +61,49 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+}
+
+.right-content-form div {
+    position: relative;
+}
+.right-content-form input{
+    width: 20rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    border: .1rem solid #ddd;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.right-content-form input:focus{
+    background-color: #d9ebf7;
+    transition: background-color .3s;
+}
+
+
+.right-content-form label{
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #a7a6a6;
+}
+.btn-top{
+    width: 8rem;
+    background-color:  white;
+    color: #1aa1f5;
+    border: .1rem solid #1aa1f5;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-top:hover{
+    background-color: #d9ebf7;
 }
 .middle-content{
     position: absolute;

@@ -4,9 +4,10 @@ const mainPage = document.querySelector('.main-page')
 const loginPage = document.querySelector('.login-page')
 const middleContent = document.querySelector('.middle-content')
 const newsFeedPage = document.querySelector('.feeds-page')
-/*********************************/
-/*********************************/
 const btnTop = document.querySelector('.btn-top')
+const loginModal = document.querySelector('.login-modal')
+/*********************************/
+/*********************************/
 // Main page
 const goToLoginPage = () => {
     mainPage.style.display = 'none'
@@ -28,7 +29,7 @@ btnTop.addEventListener('click',()=> {
         mainPage.style.display = 'none'
         newsFeedPage.style.display = 'grid'
     } else {
-        loginPage.style.display = 'grid'
-        mainPage.style.display = 'none'
+        goToLoginPage()
+        loginModal.style.display = 'block'
     }
 })

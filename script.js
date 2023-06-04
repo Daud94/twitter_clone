@@ -17,6 +17,10 @@ const modalHeaderCancel = document.querySelector('.modal-header .bi-x-circle')
 const modalInput = document.querySelector('.modal-input')
 const modalPostBtn = document.querySelector('.modal-header button')
 const modalFooterPlus = document.querySelector('.modal-footer span')
+const user = document.querySelector('.user')
+const sidebar = document.querySelector('.sidebar')
+const sidebarWrapper = document.querySelector('.sidebar-wrapper')
+const sidebarX = document.querySelector('.sidebar-header i')
 /*********************************/
 /*********************************/
 // Main page
@@ -91,6 +95,17 @@ modalInput.addEventListener('blur', (e) => {
     if (e.target.value === ''){
         changeOpacity(.5)
     }
+})
+
+//Sidebar
+user.addEventListener('click', ()=> {
+    sidebar.classList.add('sidebar-display')
+    sidebarWrapper.classList.add('sidebar-wrapper-display')
+})
+
+sidebarX.addEventListener('click', ()=> {
+    sidebar.classList.remove('sidebar-display')
+    sidebarWrapper.classList.remove('sidebar-wrapper-display')
 })
 
 

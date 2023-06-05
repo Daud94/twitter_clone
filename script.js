@@ -21,6 +21,8 @@ const user = document.querySelector('.user')
 const sidebar = document.querySelector('.sidebar')
 const sidebarWrapper = document.querySelector('.sidebar-wrapper')
 const sidebarX = document.querySelector('.sidebar-header i')
+const toggle = document.querySelector('.toggle')
+const circle = document.querySelector('.circle')
 /*********************************/
 /*********************************/
 // Main page
@@ -108,5 +110,8 @@ sidebarX.addEventListener('click', ()=> {
     sidebarWrapper.classList.remove('sidebar-wrapper-display')
 })
 
-
+// dark mode
+toggle.addEventListener('click',() => {
+    circle.classList.toggle('move')
+})
 
